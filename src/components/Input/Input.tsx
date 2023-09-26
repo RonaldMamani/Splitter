@@ -10,7 +10,7 @@ export default function Input({value, setValue} : InputProps ) {
 
     return (
         <label htmlFor="" className="">
-            <input className="" type="number" value={value} onChange={handleChange} />
+            <input className="" placeholder="insira um Numero" type="number" value={value ? value : ""} onChange={handleChange} />
         </label>
     )
 }
