@@ -13,7 +13,7 @@ export default function InputCustom({onClick, value, setValue, active} : Content
     return (
         <input 
             type={active ? "text" : "number"} 
-            className={`${active ? "bg-[#00474B] text-slate-100 uppercase" : "text-[#00474B]"}  rounded-xl border-2 border-[#26C2AE] text-xl font-bold text-center`} 
+            className={`${active ? "bg-[#00474B] text-slate-100 uppercase" : "text-[#00474B]"} rounded-xl border-2 border-[#26C2AE] text-xl font-bold text-center cursor-pointer`} 
             value={active ? "Custom" : `${value}`}
             onClick={onClick} 
             onChange={handleChange} />

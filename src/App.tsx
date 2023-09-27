@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import ButtonTip from './components/Button/ButtonTip'
-import Input from './components/Input/Input'
 import InputCustom from './components/Input/InputCustom'
 import ShowResults from './components/Calculate/ShowResults'
 
 import logo from "../public/logo.svg"
+import InputPerson from './components/Input/InputPerson'
+import InputBill from './components/Input/Input'
 
 export default function App() {
 
@@ -37,15 +38,14 @@ export default function App() {
     setTotal(0)
   }
 
-
   return (
     <section className='
-      h-screen flex flex-col justify-center gap-14 items-center bg-[#C5E4E7]
-      lg:px-40 '>
-      <img className='' src={logo} alt="Logotipo de Splitter" />
-      <div className='p-9 bg-white rounded-xl flex flex-col gap-16 lg:grid lg:grid-cols-2 lg:grid-rows-1'>
+      flex flex-col justify-center gap-14 items-center bg-[#C5E4E7]
+      lg:px-40 lg:h-screen '>
+      <img className='pt-10' src={logo} alt="Logotipo de Splitter" />
+      <div className='p-8 bg-white rounded-3xl flex flex-col gap-16 lg:grid lg:grid-cols-2 lg:grid-rows-1'>
         <div className='flex flex-col justify-between gap-5'>
-          <Input nameInput='Bill' value={Bill} setValue={setBill} />
+          <InputBill nameInput='Bill' value={Bill} setValue={setBill} />
           <div className='flex flex-col gap-4'>
             <span className='text-emerald-900 font-bold'>Select Tip%</span>
             <div className='
@@ -57,10 +57,10 @@ export default function App() {
               <ButtonTip content='15%' Value={15} onClick={(value) => Calculate(value)}  />
               <ButtonTip content='25%' Value={25} onClick={(value) => Calculate(value)}  />
               <ButtonTip content='50%' Value={50} onClick={(value) => Calculate(value)}  />
-              <InputCustom active={active} value={PercentCustom} setValue={setPersentCustom} onClick={() => {setActive(!active)}} />
+              <InputCustom active={!active} value={PercentCustom} setValue={setPersentCustom} onClick={() => {setActive(!active)}} />
             </div>
           </div>
-          <Input nameInput='Number of People' value={Person} setValue={setPerson} />
+          <InputPerson nameInput='Number of People' value={Person} setValue={setPerson} />
         </div>
         <div className='
           bg-[#00474B] p-4 rounded-xl flex flex-col
@@ -71,7 +71,7 @@ export default function App() {
             <ShowResults  NameResult='Total' SubName=' person' Result={Total} />
           </div>
           <div className='flex flex-col justify-end gap-5'>
-            {!active ? (
+            {active ? (
               <ButtonTip content={`Calculate ${PercentCustom}%`} Value={PercentCustom} onClick={(setPersentCustom) => Calculate(+setPersentCustom)} />
             ) : (
               <></>
