@@ -1,14 +1,14 @@
 type Tip = {
     Value?: number
-    content: string
+    content: string 
     onClick: (value : number) => void
 }
 
 export default function ButtonTip({Value, content, onClick} : Tip) {
     return (
         <button className=" 
-            bg-emerald-950 text-slate-50 px-4 py-2 rounded-xl
-            hover:bg-emerald-200 hover:text-emerald-950 transition-colors
+            bg-[#00474B] border-2 border-[#9FE8DF] text-slate-50 text-2xl font-bold px-4 py-3 rounded-xl
+            hover:bg-[#9FE8DF] hover:text-[#004748] transition-colors
             " value={Value} onClick={() => onClick(Value ?? 0)} >{content}</button>
     )
 }
