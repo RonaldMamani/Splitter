@@ -2,6 +2,10 @@
 
 Projeto de Site de Sistema de Calculo de Gorgeta baseado em porcentagem(%), vocè pode tambem customizer o valor da porcentagem e pode colocar a quantidade de pessoas para aplicar o Calculo de Gorgeta.
 
+## Imagens
+
+![Spitter](https://res.cloudinary.com/dz209s6jk/image/upload/v1639564424/Screenshots/fjfb3vlopfsvdaxdthq1.jpg)
+
 ## Stack utilizada
 
 **Front-end:** ReactJS, TypeScript, Vite, TailwindCSS, HTML, CSS
