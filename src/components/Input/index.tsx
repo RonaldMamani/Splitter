@@ -1,12 +1,12 @@
 import { ChangeEvent } from "react"
 
-type InputProps = {
+type Props = {
     value : number
     nameInput: string
     setValue: (value: number) => void
 }
 
-export default function InputBill({value, nameInput, setValue} : InputProps ) {
+export default function Input({value, nameInput, setValue} : Props ) {
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {setValue(+e.target.value)}
 
     return (

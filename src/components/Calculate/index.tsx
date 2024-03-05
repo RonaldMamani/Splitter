@@ -1,10 +1,10 @@
-type Results = {
+type Props = {
     NameResult : string
     SubName : string
     Result : number
 }
 
-export default function ShowResults({NameResult, SubName, Result} : Results) {
+export default function Calculate({NameResult, SubName, Result} : Props) {
     return(
         <div className="flex justify-between items-center">
             <div className="flex flex-col">
