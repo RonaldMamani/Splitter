@@ -1,27 +1,52 @@
-# React + TypeScript + Vite
+# Spitter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto de Site de Sistema de Calculo de Gorgeta baseado em porcentagem(%), vocè pode tambem customizer o valor da porcentagem e pode colocar a quantidade de pessoas para aplicar o Calculo de Gorgeta.
 
-Currently, two official plugins are available:
+## Imagens
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Spitter](https://res.cloudinary.com/dz209s6jk/image/upload/v1639564424/Screenshots/fjfb3vlopfsvdaxdthq1.jpg)
 
-## Expanding the ESLint configuration
+## Stack utilizada
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Front-end:** ReactJS, TypeScript, Vite, TailwindCSS, HTML, CSS
+## Instalação
 
-- Configure the top-level `parserOptions` property like this:
+Clone o Repositorio e instale as dependencias do projeto
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+ git clone https://github.com/RonaldMamani/MeuPortifolio.git
+ npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Instalação do TailwindCSS:
+
+Para saber sobre algumas funcionalidades leia a [documentação do TailwindCSS](https://tailwindcss.com/docs/installation)
+
+```bash
+ npm install -D tailwindcss
+ npx tailwindcss init
+```
+
+
+#### Execução de Codigo:
+
+Execute o codigo com 
+
+```bash
+ npm run dev
+```
+## Link do Deploy
+
+O site esta hospedado no momento, esta na vercel com deploy realizado.
+
+Link: https://splitter-alpha.vercel.app/
+## Aprendizados
+
+Tive bastante aprendizado com o ReactJS com Typescript, e tive aprendizado com funções de calculo com o hook do ReactJS que e o useState e mostrando o resultado na saida do input.
+
+
+## Autores
+
+- [@Ronaldmamani](https://www.github.com/RonaldMamani)
+
+
